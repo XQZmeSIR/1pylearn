@@ -14,4 +14,5 @@ def main():
 
 
 def get_sales():
-    
+    monthly_sales = float(input('Enter the monthly sales: '))
+    return monthly_sales
