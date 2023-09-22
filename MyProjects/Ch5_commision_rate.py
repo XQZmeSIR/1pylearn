@@ -13,6 +13,6 @@ def main():
         print('U have to pay the discrepancy in price to the company!')
 
 
-def get_sales():
+def get_sales():  # First function in MAIN for getting input.
     monthly_sales = float(input('Enter the monthly sales: '))
-    return monthly_sales
+    return monthly_sales  # We return the value to MAIN func.
