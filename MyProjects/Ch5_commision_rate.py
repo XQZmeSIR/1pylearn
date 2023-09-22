@@ -1,5 +1,13 @@
-# Main function
+### Tony Gaddis. Chapter 5: Functions;  Page 273
 
+# Получить месячные продажи продавца.    done 
+# Получить сумму авансовой выплаты.     done 
+# Применить сумму месячных продаж для определения ставки комиссионных.   done
+# Рассчитать выплату продавцу с использованием ранее показанной формулы.
+# Если сумма отрицательная, то указат ь, что продавец должен возместить компании разницу.
+
+
+# Main function
 def main():
     sales = get_sales()                     # Get sales over the month
     prepay = get_prepay()                   # Get an anvanced pay
@@ -7,12 +15,35 @@ def main():
     
     payment = sales * comm_rate - prepay    # Getting the payment for a month
 
-    print(f"The payment will be {payment:,.2f}!")
+    print(f"The payment will be ${payment:,.2f}!")
 
-    if pay < 0:
+    if payment < 0:
         print('U have to pay the discrepancy in price to the company!')
 
 
-def get_sales():  # First function in MAIN for getting input.
+def get_sales():                           # First function in MAIN for getting input.
     monthly_sales = float(input('Enter the monthly sales: '))
-    return monthly_sales  # We return the value to MAIN func.
+    return monthly_sales                   # We return the value to MAIN func.
+
+
+def get_prepay():                          # Second function in MAIN func
+    print("Enter the adv pay if there was or type 0 if there weren't.")
+    print()
+    adv_pay = float(input('Enter the adv pay: '))
+    return adv_pay
+
+def determine_comm_rate(sales):             # Third function in MAIN func
+    if sales < 10000.00:
+        rate = 0.10
+    elif sales >= 10000 and sales <= 14999.00:
+        rate = 0.12
+    elif sales >= 15000 and sales <= 17999.00:
+        rate = 0.14
+    elif sales >= 18000 and sales <= 21999.00:
+        rate = 0.16
+    else:
+        rate = 0.18
+
+    return rate
+
+main()
