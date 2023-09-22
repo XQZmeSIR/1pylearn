@@ -47,3 +47,17 @@ def determine_comm_rate(sales):             # Third function in MAIN func
     return rate
 
 main()
+
+# Feedback by ChatGPT
+## 1 use dictionary instead of redundant if elif
+# commission_rates = {
+    #     (0, 9999.99): 0.10,
+    #     (10000.00, 14999.99): 0.12,
+    #     (15000.00, 17999.99): 0.14,
+    #     (18000.00, 21999.99): 0.16,
+    # }
+    
+    # for (min_sales, max_sales), rate in commission_rates.items():
+    #     if min_sales <= sales <= max_sales:
+    #         return rate
+## 2 Use Validation    using  while True:  try except
