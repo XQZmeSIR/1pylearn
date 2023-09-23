@@ -188,18 +188,26 @@
 
 ########### Четное или нечетное число ###########
 
-def main():
-	number = int(input("Enter the number: "))
-	status = is_even(number)
-	print(status)
+# def main():
+# 	number = int(input("Enter the number: "))
+# 	status = is_even(number)
+# 	print(f'The vallue is: {status}')
 
 
-def is_even(number):
-	if (number % 2 ) == 0:
-		status = True
-	else:
-		status = False
-	return status
+# def is_even(number):
+# 	if (number % 2 ) == 0:
+# 		status = True
+# 	else:
+# 		status = False
+# 	return status
 
 
-main()
+# main()
+
+
+
+##### Func and VALIDATION
+
+while is_invalid(model):
+	print("Valid num are 100, 200, 300.")
+	model = int(input("Enter the valid number of model: "))
