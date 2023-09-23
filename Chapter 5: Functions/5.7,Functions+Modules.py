@@ -177,11 +177,29 @@
 
 # main()
 
-def get_regular_price():
-	price = float(input("Введите обычную цену товара: "))
-	return price
+# def get_regular_price():
+# 	price = float(input("Введите обычную цену товара: "))
+# 	return price
+# 
+# get_price = get_regular_price()
+# print(int(get_price))
 
-get_price = get_regular_price()
-print(int(get_price))
 
 
+########### Четное или нечетное число ###########
+
+def main():
+	number = int(input("Enter the number: "))
+	status = is_even(number)
+	print(status)
+
+
+def is_even(number):
+	if (number % 2 ) == 0:
+		status = True
+	else:
+		status = False
+	return status
+
+
+main()
