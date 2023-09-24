@@ -186,28 +186,26 @@
 
 
 
-########### Четное или нечетное число ###########
-
-# def main():
-# 	number = int(input("Enter the number: "))
-# 	status = is_even(number)
-# 	print(f'The vallue is: {status}')
-
-
-# def is_even(number):
-# 	if (number % 2 ) == 0:
-# 		status = True
-# 	else:
-# 		status = False
-# 	return status
-
-
-# main()
+########## Четное или нечетное число ###########
 
 
 
-##### Func and VALIDATION
 
-while is_invalid(model):
-	print("Valid num are 100, 200, 300.")
-	model = int(input("Enter the valid number of model: "))
+
+#### Func and VALIDATION
+
+
+def main():
+	name1, name2 = get_name()              # In Python, you can use @@tuple unpacking@@
+	print(f"My name is {name1} {name2}.")  # to assign multiple variables at once
+										   # when a function returns multiple values
+
+
+def get_name():
+	first = input('Введите свое имя: ')
+	last = input('Введите свою фамилию: ')
+	return first, last   # when you write return first, last, 
+						 # Python implicitly creates a !!!tuple!!! with these two values.
+ 
+
+main()
