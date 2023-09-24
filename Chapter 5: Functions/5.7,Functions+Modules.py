@@ -195,17 +195,36 @@
 #### Func and VALIDATION
 
 
-def main():
-	name1, name2 = get_name()              # In Python, you can use @@tuple unpacking@@
-	print(f"My name is {name1} {name2}.")  # to assign multiple variables at once
-										   # when a function returns multiple values
+# def main():
+# 	name1, name2 = get_name()              # In Python, you can use @@tuple unpacking@@
+# 	print(f"My name is {name1} {name2}.")  # to assign multiple variables at once
+# 										   # when a function returns multiple values
 
 
-def get_name():
-	first = input('Введите свое имя: ')
-	last = input('Введите свою фамилию: ')
-	return first, last   # when you write return first, last, 
-						 # Python implicitly creates a !!!tuple!!! with these two values.
+# def get_name():
+# 	first = input('Введите свое имя: ')
+# 	last = input('Введите свою фамилию: ')
+# 	return first, last   # when you write return first, last, 
+# 						 # Python implicitly creates a !!!tuple!!! with these two values.
  
+
+# main()
+
+def divide(num1, num2): # instead of if else i used a tty except validation
+	while True:
+		try:
+			result = num1 / num2
+			print(f"The result is: {int(result)}")  # We can convert into diff types
+		except	ZeroDivisionError:					# within the f-strings
+			result = None
+			print("Division is not allowed!")
+
+		return result
+
+def main():
+	num1 = int(input('First number: '))
+	num2 = int(input('Second number: '))
+	res = divide(num1, num2)
+
 
 main()
