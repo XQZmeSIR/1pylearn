@@ -13,8 +13,8 @@ def main():
     while choice != QUIT_CHOICE:
         display_menu()
         choice = int(input("Enter your choice: "))
-            print()
-            print()
+        print()
+        print()
 
 
         if choice == AREA_CIRCLE_CHOICE:
