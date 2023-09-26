@@ -40,8 +40,7 @@ def main():
         elif choice == PERIMETER_RECTANGLE_CHOICE:
             width = float(input("Enter the rectangle's width: "))
             length = float(input("Enter the rectabgle's length: "))
-            print('The perimeter is',
-            rectangle.perimeter(width, lenght))
+            print('The perimeter is', rectangle.perimeter(width, length))
             print()
             print()
 
