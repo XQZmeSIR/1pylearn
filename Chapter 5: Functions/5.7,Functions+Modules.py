@@ -210,21 +210,21 @@
 
 # main()
 
-def divide(num1, num2): # instead of if else i used a tty except validation
-	while True:
-		try:
-			result = num1 / num2
-			print(f"The result is: {int(result)}")  # We can convert into diff types
-		except	ZeroDivisionError:					# within the f-strings
-			result = None
-			print("Division is not allowed!")
+# def divide(num1, num2): # instead of if else i used a tty except validation
+# 	while True:
+# 		try:
+# 			result = num1 / num2
+# 			print(f"The result is: {int(result)}")  # We can convert into diff types
+# 		except	ZeroDivisionError:					# within the f-strings
+# 			result = None
+# 			print("Division is not allowed!")
 
-		return result
+# 		return result
 
-def main():
-	num1 = int(input('First number: '))
-	num2 = int(input('Second number: '))
-	res = divide(num1, num2)
+# def main():
+# 	num1 = int(input('First number: '))
+# 	num2 = int(input('Second number: '))
+# 	res = divide(num1, num2)
 
 
-main()
+# main()
