@@ -20,29 +20,3 @@
 # код внутри `if __name__ == '__main__':` не выполняется автоматически,
 # что позволяет использовать этот файл как библиотеку или модуль в других программах.
 
-
-
-# def times_ten(arg):
-#     return arg * 10
-
-# print(times_ten(10))
-
-
-# value = 12
-# result = times_ten(value)
-# print(result)
-
-
-# def my_function(a, b, c):
-#     d = (a + c) / b
-#     print(d)
-
-
-# my_function(a=2, b=4, c=6)
-
-
-
-
-
-
-
