@@ -123,6 +123,77 @@
 
 # 4. Automobile Cost
 
-def main():
-    
+
+#### My version is fucking dreadful cuz it's done in a very inefficient way
+#### too many lines of code. I could've done it in 11 lines of code!!!!!
+#### SEE BELLOW
+
+# def main():
+#     print("Enter the monthly cost of the following expences:")
+
+#     loan = loan_payment()
+#     insurance = insurance_payment()
+#     gas = gas_payment()
+#     oil = oil_payment()
+#     tires = tires_payment()
+#     maintenance = maintenance_payment()
+
+#     total_month = total_mon(loan, insurance, gas, oil, tires, maintenance)
+#     total_annual = total_ann(loan, insurance, gas, oil, tires, maintenance)
+#     print() 
+#     print(f"Your total month expenses are: ${total_month:,.2f}")
+#     print(f"Your total annual expenses are: ${total_annual:,.2f}")
+
+# def loan_payment():
+
+#     return float(input("Loan payment: "))
+
+# def insurance_payment():
+#     return float(input("Insurance payment: "))
+
+# def gas_payment():
+#     return float(input("Gas payment: "))
+
+# def oil_payment():
+#     return float(input("Oil payment: "))
+
+# def tires_payment():
+#     return float(input("Tires payment: "))
+
+# def maintenance_payment():
+#     return float(input("Maintenance payment: "))
+
+# def total_mon(one, two, three, four, five, six):
+#     return one + two + three + four + five + six
+
+# def total_ann(one, two, three, four, five, six):
+#     return (one + two + three + four + five + six) * 12
+
+# main()
+
+
+
+
+#### That's how CHATGPT has done it
+def calculate_expense_total():
+    # Get monthly expenses from the user
+    loan_payment = float(input("Enter monthly loan payment: $"))
+    insurance = float(input("Enter monthly insurance cost: $"))
+    gas = float(input("Enter monthly gas cost: $"))
+    oil = float(input("Enter monthly oil cost: $"))
+    tires = float(input("Enter monthly tire cost: $"))
+    maintenance = float(input("Enter monthly maintenance cost: $"))
+
+    # Calculate total monthly expenses
+    total_monthly_cost = loan_payment + insurance + gas + oil + tires + maintenance
+
+    # Calculate total annual expenses
+    total_annual_cost = total_monthly_cost * 12
+
+    # Display the results
+    print(f"Total monthly cost: ${total_monthly_cost:.2f}")
+    print(f"Total annual cost: ${total_annual_cost:.2f}")
+
+if __name__ == "__main__":
+    calculate_expense_total()
 
