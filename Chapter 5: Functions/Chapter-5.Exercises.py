@@ -101,7 +101,7 @@
 # get_the_cost()
 
 #################################3
-#       GPT
+# GPT
 # def calculate_minimum_insurance():
 #     try:
 #         # Get the replacement cost from the user
