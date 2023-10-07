@@ -175,25 +175,28 @@
 
 
 #### That's how CHATGPT has done it
-def calculate_expense_total():
-    # Get monthly expenses from the user
-    loan_payment = float(input("Enter monthly loan payment: $"))
-    insurance = float(input("Enter monthly insurance cost: $"))
-    gas = float(input("Enter monthly gas cost: $"))
-    oil = float(input("Enter monthly oil cost: $"))
-    tires = float(input("Enter monthly tire cost: $"))
-    maintenance = float(input("Enter monthly maintenance cost: $"))
+# def calculate_expense_total():
+#     # Get monthly expenses from the user
+#     loan_payment = float(input("Enter monthly loan payment: $"))
+#     insurance = float(input("Enter monthly insurance cost: $"))
+#     gas = float(input("Enter monthly gas cost: $"))
+#     oil = float(input("Enter monthly oil cost: $"))
+#     tires = float(input("Enter monthly tire cost: $"))
+#     maintenance = float(input("Enter monthly maintenance cost: $"))
+#
+#     # Calculate total monthly expenses
+#     total_monthly_cost = loan_payment + insurance + gas + oil + tires + maintenance
+#
+#     # Calculate total annual expenses
+#     total_annual_cost = total_monthly_cost * 12
+#
+#     # Display the results
+#     print(f"Total monthly cost: ${total_monthly_cost:.2f}")
+#     print(f"Total annual cost: ${total_annual_cost:.2f}")
+#
+# if __name__ == "__main__":
+#     calculate_expense_total()
+#     print('Hello world')
 
-    # Calculate total monthly expenses
-    total_monthly_cost = loan_payment + insurance + gas + oil + tires + maintenance
 
-    # Calculate total annual expenses
-    total_annual_cost = total_monthly_cost * 12
-
-    # Display the results
-    print(f"Total monthly cost: ${total_monthly_cost:.2f}")
-    print(f"Total annual cost: ${total_annual_cost:.2f}")
-
-if __name__ == "__main__":
-    calculate_expense_total()
 
