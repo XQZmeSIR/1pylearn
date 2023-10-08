@@ -1,9 +1,10 @@
 # put your python code here
 a = int(input())
 b = int(input())
-if a < b:
+c = int(input())
+if a < b and a < c:
     print(a)
-else:
+elif b < a and b < c:
     print(b)
-
-### ok
+else:
+    print(c)
