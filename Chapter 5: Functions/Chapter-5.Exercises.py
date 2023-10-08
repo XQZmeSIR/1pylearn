@@ -199,4 +199,25 @@
 #     print('Hello world')
 
 
+# 5. A Property Tax
+# actual_price = float(input())
+#
+# assessment_value = 0.6 * actual_price
+#
+# property_tax = (assessment_value / 100) * 72
+#
+# print(f"Assessment Value: ${assessment_value:.2f}")
+# print(f"Property Tax: ${property_tax:.2f}")
 
+def get_input():
+    fat = float(input('Fat grams per day: '))
+    carbohydrates = float(input('Carbohydrate grams per day: '))
+    cal1, cal2 = convert_to_callories(fat, carbohydrates)
+    print(f"Calories from fat: {cal1}. Calories form carbs: {cal2}")
+
+def convert_to_callories(fat, carbohydrates):
+    calloriesFat = fat * 9
+    calloriesCarbo = carbohydrates * 4
+    return calloriesFat, calloriesCarbo
+
+get_input()

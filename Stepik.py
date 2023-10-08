@@ -1,10 +1,14 @@
-# put your python code here
-a = int(input())
-b = int(input())
-c = int(input())
-if a < b and a < c:
-    print(a)
-elif b < a and b < c:
-    print(b)
+age = int(input("What's your age: "))
+
+if age <= 13:
+    print("You are a child")
+elif age >= 14 and age <= 24:
+    print("You are an aduld")
+elif age >= 24 and age <= 59:
+    print("You are a formed man")
 else:
-    print(c)
+    print("You are an elderly")
+
+
+
+
