@@ -245,27 +245,54 @@
 # 8. Paint Job Estimator
 
 # Get input from user
-square_feet = float(input("Enter the square feet of wall space to be painted: "))
-paint_price = float(input("Enter the price of the paint per gallon: "))
+# square_feet = float(input("Enter the square feet of wall space to be painted: "))
+# paint_price = float(input("Enter the price of the paint per gallon: "))
 
-# Calculate gallons of paint required
-gallons_of_paint = square_feet / 112
+# # Calculate gallons of paint required
+# gallons_of_paint = square_feet / 112
 
-# Calculate hours of labor required
-hours_of_labor = gallons_of_paint * 8
+# # Calculate hours of labor required
+# hours_of_labor = gallons_of_paint * 8
 
-# Calculate cost of paint
-cost_of_paint = gallons_of_paint * paint_price
+# # Calculate cost of paint
+# cost_of_paint = gallons_of_paint * paint_price
 
-# Calculate labor charges
-labor_charges = hours_of_labor * 35
+# # Calculate labor charges
+# labor_charges = hours_of_labor * 35
 
-# Calculate total cost of paint job
-total_cost = cost_of_paint + labor_charges
+# # Calculate total cost of paint job
+# total_cost = cost_of_paint + labor_charges
 
-# Display results
-print("Gallons of paint required:", gallons_of_paint)
-print("Hours of labor required:", hours_of_labor)
-print("Cost of paint: $", cost_of_paint)
-print("Labor charges: $", labor_charges)
-print("Total cost of paint job: $", total_cost)
+# # Display results
+# print("Gallons of paint required:", gallons_of_paint)
+# print("Hours of labor required:", hours_of_labor)
+# print("Cost of paint: $", cost_of_paint)
+# print("Labor charges: $", labor_charges)
+# print("Total cost of paint job: $", total_cost)
+
+
+
+# 9. Monthly Sales Tax
+
+# def main():
+#     total_sales = float(input("Enter the total sales: "))
+#     county_sales = 0.05 * total_sales
+#     state_sales = 0.025 * total_sales
+#     total_sales_tax = county_sales + state_sales
+
+#     print(f"The amount of county sales tax: ${county_sales:,.2f}")
+#     print(f"The amount of state sales tax: ${state_sales:,.2f}")
+#     print(f"The total sales tax (county plus state): ${total_sales_tax:,.2f}")
+
+
+# main()
+
+
+
+
+# 10. Feet to Inches
+
+
+
+
+
