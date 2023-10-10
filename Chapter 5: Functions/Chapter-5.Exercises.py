@@ -209,15 +209,38 @@
 # print(f"Assessment Value: ${assessment_value:.2f}")
 # print(f"Property Tax: ${property_tax:.2f}")
 
-def get_input():
-    fat = float(input('Fat grams per day: '))
-    carbohydrates = float(input('Carbohydrate grams per day: '))
-    cal1, cal2 = convert_to_callories(fat, carbohydrates)
-    print(f"Calories from fat: {cal1}. Calories form carbs: {cal2}")
 
-def convert_to_callories(fat, carbohydrates):
-    calloriesFat = fat * 9
-    calloriesCarbo = carbohydrates * 4
-    return calloriesFat, calloriesCarbo
 
-get_input()
+# 6. Calorits from Fat and Carbohydrates
+# def get_input():
+#     fat = float(input('Fat grams per day: '))
+#     carbohydrates = float(input('Carbohydrate grams per day: '))
+#     cal1, cal2 = convert_to_callories(fat, carbohydrates)
+#     print(f"Calories from fat: {cal1}. Calories form carbs: {cal2}")
+
+# def convert_to_callories(fat, carbohydrates):
+#     calloriesFat = fat * 9
+#     calloriesCarbo = carbohydrates * 4
+#     return calloriesFat, calloriesCarbo
+
+# get_input()
+
+
+# 7. Stadium Seating
+
+CLASS_A = 20.0
+CLASS_B = 15.0
+CLASS_C = 10.0
+
+print("How much tickets were sold for each class?")
+class1, class2, class3 = int(input("Class A: ")), int(input("Class B: ")), int(input("Class C: "))
+
+sales1 = class1 * CLASS_A
+sales2 = class2 * CLASS_B
+sales3 = class3 * CLASS_C
+
+total_sales = sales1 + sales2 + sales3
+
+print('Total sales: $', total_sales)
+
+
