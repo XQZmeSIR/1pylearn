@@ -228,19 +228,44 @@
 
 # 7. Stadium Seating
 
-CLASS_A = 20.0
-CLASS_B = 15.0
-CLASS_C = 10.0
+# print("How much tickets were sold for each class?")
+# class1, class2, class3 = int(input("Class A: ")), int(input("Class B: ")), int(input("Class C: "))
 
-print("How much tickets were sold for each class?")
-class1, class2, class3 = int(input("Class A: ")), int(input("Class B: ")), int(input("Class C: "))
+# sales1 = class1 * 20
+# sales2 = class2 * 15
+# sales3 = class3 * 10
 
-sales1 = class1 * CLASS_A
-sales2 = class2 * CLASS_B
-sales3 = class3 * CLASS_C
+# total_sales = sales1 + sales2 + sales3
 
-total_sales = sales1 + sales2 + sales3
-
-print('Total sales: $', total_sales)
+# print('Total sales: $', total_sales)
 
 
+
+
+# 8. Paint Job Estimator
+
+# Get input from user
+square_feet = float(input("Enter the square feet of wall space to be painted: "))
+paint_price = float(input("Enter the price of the paint per gallon: "))
+
+# Calculate gallons of paint required
+gallons_of_paint = square_feet / 112
+
+# Calculate hours of labor required
+hours_of_labor = gallons_of_paint * 8
+
+# Calculate cost of paint
+cost_of_paint = gallons_of_paint * paint_price
+
+# Calculate labor charges
+labor_charges = hours_of_labor * 35
+
+# Calculate total cost of paint job
+total_cost = cost_of_paint + labor_charges
+
+# Display results
+print("Gallons of paint required:", gallons_of_paint)
+print("Hours of labor required:", hours_of_labor)
+print("Cost of paint: $", cost_of_paint)
+print("Labor charges: $", labor_charges)
+print("Total cost of paint job: $", total_cost)
