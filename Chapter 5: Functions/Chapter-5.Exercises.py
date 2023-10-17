@@ -1,3 +1,4 @@
+
 # def times_ten(arg):
 #     return arg * 10
 
@@ -270,27 +271,109 @@
 # print("Labor charges: $", labor_charges)
 # print("Total cost of paint job: $", total_cost)
 
-
-
+#
+#
 # 9. Monthly Sales Tax
-
+#
 # def main():
 #     total_sales = float(input("Enter the total sales: "))
 #     county_sales = 0.05 * total_sales
 #     state_sales = 0.025 * total_sales
 #     total_sales_tax = county_sales + state_sales
-
+#
 #     print(f"The amount of county sales tax: ${county_sales:,.2f}")
 #     print(f"The amount of state sales tax: ${state_sales:,.2f}")
 #     print(f"The total sales tax (county plus state): ${total_sales_tax:,.2f}")
+#
+#
+# main()
+#
+#
+#
+#
+# 10. Feet to Inches
+## DONE
 
+# 11. Math Quiz
+# import random
+#
+# def generate():
+#     num1 = random.randint(1, 100)
+#     num2 = random.randint(1, 100)
+#     return num1, num2
+#
+# def main():
+#     chis1, chis2 = generate()
+#     plus = chis1 + chis2
+#
+#     print(f'''  {chis1}
+# + {chis2}''')
+#     answer = int(input('> '))
+#     if answer == plus:
+#         print('Correct!')
+#     else:
+#         print(f'Wrong! Right figure is: {plus}')
+#
+#
+# main()
 
+# def main():
+#     num1 = int(input("num 1: "))
+#     num2 = int(input("num 2: "))
+#     greater_numb = max(num1, num2)
+#     print(greater_numb)
+#
+# def max(one, two):
+#     if one > two:
+#         return one
+#     else:
+#         return two
+#
+#
 # main()
 
 
 
+#     ####   13. Falling Distance
 
-# 10. Feet to Inches
+# def falling_distance(time):
+#     g = 9.8
+#     distance = 0.5 * g * time**2
+#     return distance
+#
+#
+# def main():
+#     for time in range(1, 11):
+#         end = falling_distance(time)
+#         print('The distance is:', int(end), 'meters')
+#
+# if __name__ == '__main__':
+#     main()
+
+
+#     14. Kinetic Energy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
