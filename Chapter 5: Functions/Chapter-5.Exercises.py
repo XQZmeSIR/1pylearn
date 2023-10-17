@@ -305,7 +305,7 @@
 # def main():
 #     chis1, chis2 = generate()
 #     plus = chis1 + chis2
-#
+
 #     print(f'''  {chis1}
 # + {chis2}''')
 #     answer = int(input('> '))
@@ -313,8 +313,8 @@
 #         print('Correct!')
 #     else:
 #         print(f'Wrong! Right figure is: {plus}')
-#
-#
+
+
 # main()
 
 # def main():
@@ -322,14 +322,14 @@
 #     num2 = int(input("num 2: "))
 #     greater_numb = max(num1, num2)
 #     print(greater_numb)
-#
+
 # def max(one, two):
 #     if one > two:
 #         return one
 #     else:
 #         return two
-#
-#
+
+
 # main()
 
 
@@ -340,25 +340,61 @@
 #     g = 9.8
 #     distance = 0.5 * g * time**2
 #     return distance
-#
-#
+
+
 # def main():
 #     for time in range(1, 11):
 #         end = falling_distance(time)
 #         print('The distance is:', int(end), 'meters')
-#
+
 # if __name__ == '__main__':
 #     main()
 
 
-#     14. Kinetic Energy
+
+#^^^^^^^^^^^^ 14. Kinetic Energy
+
+# def kinetic_energy(mass, velocity):
+#     kinetic = 0.5 * mass * velocity**2
+#     return kinetic
+
+# def main():
+#     mass = float(input('Mass is: '))
+#     velocity = float(input('Velocity is: '))
+#     kinetic = kinetic_energy(mass, velocity)
+#     print(f"Kinetic energy is equal: {kinetic:,.2f}")
 
 
 
+# if __name__ == "__main__":
+#     main()
+# # end main
 
 
 
+# Test Average and Grade
 
+def main():
+    score1, score2, score3, score4, score5 = int(input()), int(input()), int(input()), int(input()), int(input())
+    average_score = calc_average(score1, score2, score3,score4,score5)
+
+def calc_average(score1, score2, score3,score4,score5):
+    average = (score1 + score2 + score3+score4+score5) / 5
+    return average
+
+
+def determine_grade(score):
+
+    if 90 <= score <= 100:
+        return 'A'
+    elif 80 <= score < 90:
+        return 'B'
+    elif 70 <= score < 80:
+        return 'C'
+    elif 60 <= score < 70:
+        return 'D'
+    else:
+        return 'F'
 
 
 
