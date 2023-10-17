@@ -398,6 +398,41 @@ def determine_grade(score):
 
 
 
+### ChatGPT 
+def calc_average(scores):
+    total = sum(scores)     # Use *sum* to sum values
+    average = total / len(scores)  # Use *len* to count number of values
+    return average
+
+def determine_grade(score):
+    if 90 <= score <= 100:
+        return 'A'
+    elif 80 <= score < 90:
+        return 'B'
+    elif 70 <= score < 80:
+        return 'C'
+    elif 60 <= score < 70:
+        return 'D'
+    else:
+        return 'F'
+
+def main():
+    test_scores = []
+    for i in range(5):
+        score = int(input(f"Enter test score {i+1}: "))
+        test_scores.append(score)
+
+    average_score = calc_average(test_scores)
+    print(f"Average Test Score: {average_score:.2f}")
+
+    print("Letter Grades:")
+    for score in test_scores:
+        grade = determine_grade(score)
+        print(f"Test Score: {score} - Grade: {grade}")
+
+if __name__ == "__main__":
+    main()
+
 
 
 
