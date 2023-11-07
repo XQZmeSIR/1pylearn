@@ -374,65 +374,96 @@
 
 # Test Average and Grade
 
+# def main():
+#     score1, score2, score3, score4, score5 = int(input()), int(input()), int(input()), int(input()), int(input())
+#     average_score = calc_average(score1, score2, score3,score4,score5)
+
+# def calc_average(score1, score2, score3,score4,score5):
+#     average = (score1 + score2 + score3+score4+score5) / 5
+#     return average
+
+
+# def determine_grade(score):
+
+#     if 90 <= score <= 100:
+#         return 'A'
+#     elif 80 <= score < 90:
+#         return 'B'
+#     elif 70 <= score < 80:
+#         return 'C'
+#     elif 60 <= score < 70:
+#         return 'D'
+#     else:
+#         return 'F'
+
+
+
+# ### ChatGPT 
+# def calc_average(scores):
+#     total = sum(scores)     # Use *sum* to sum values
+#     average = total / len(scores)  # Use *len* to count number of values
+#     return average
+
+# def determine_grade(score):
+#     if 90 <= score <= 100:
+#         return 'A'
+#     elif 80 <= score < 90:
+#         return 'B'
+#     elif 70 <= score < 80:
+#         return 'C'
+#     elif 60 <= score < 70:
+#         return 'D'
+#     else:
+#         return 'F'
+
+# def main():
+#     test_scores = []
+#     for i in range(5):
+#         score = int(input(f"Enter test score {i+1}: "))
+#         test_scores.append(score)
+
+#     average_score = calc_average(test_scores)
+#     print(f"Average Test Score: {average_score:.2f}")
+
+#     print("Letter Grades:")
+#     for score in test_scores:
+#         grade = determine_grade(score)
+#         print(f"Test Score: {score} - Grade: {grade}")
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+
+####### %%%%%%%%%%%   16. Odd/Even Counter
+import random
+
+NUMBER_LIST = [random.randint(0,1000)]
+
 def main():
-    score1, score2, score3, score4, score5 = int(input()), int(input()), int(input()), int(input()), int(input())
-    average_score = calc_average(score1, score2, score3,score4,score5)
 
-def calc_average(score1, score2, score3,score4,score5):
-    average = (score1 + score2 + score3+score4+score5) / 5
-    return average
+    for numbers in range(100):
 
+        number = print(NUMBER_LIST)
+        number
 
-def determine_grade(score):
+    is_even(number)
 
-    if 90 <= score <= 100:
-        return 'A'
-    elif 80 <= score < 90:
-        return 'B'
-    elif 70 <= score < 80:
-        return 'C'
-    elif 60 <= score < 70:
-        return 'D'
-    else:
-        return 'F'
+    print('The total amount of even numbers is', even_count)
+    print('The total amount of odd numbers is', 100 - even_count)   
 
+def is_even(number):
 
+    even_count = 0
 
-### ChatGPT 
-def calc_average(scores):
-    total = sum(scores)     # Use *sum* to sum values
-    average = total / len(scores)  # Use *len* to count number of values
-    return average
+    for number in NUMBERS_LIST:
+        if (number % 2):
+            even_count += 1
 
-def determine_grade(score):
-    if 90 <= score <= 100:
-        return 'A'
-    elif 80 <= score < 90:
-        return 'B'
-    elif 70 <= score < 80:
-        return 'C'
-    elif 60 <= score < 70:
-        return 'D'
-    else:
-        return 'F'
+    return even_count
 
-def main():
-    test_scores = []
-    for i in range(5):
-        score = int(input(f"Enter test score {i+1}: "))
-        test_scores.append(score)
-
-    average_score = calc_average(test_scores)
-    print(f"Average Test Score: {average_score:.2f}")
-
-    print("Letter Grades:")
-    for score in test_scores:
-        grade = determine_grade(score)
-        print(f"Test Score: {score} - Grade: {grade}")
-
-if __name__ == "__main__":
-    main()
-
+main()
 
 
 
