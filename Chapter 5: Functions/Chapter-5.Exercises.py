@@ -540,19 +540,19 @@ def generate():
 
 def main():
     print("Guess the right number! :)")
-    your_guess = int(input("Please enter the number: "))
     num_guesses = 0  # Initialize the number of guesses to zero
-    value = generate()
 
     while True:
+        value = generate()
+        your_guess = int(input("Please enter the number: "))
         num_guesses += 1
+
         if your_guess == value:
             print("You guessed it. Good job mate!")
             print(f"Guesses: {num_guesses}")
             play_again = input("Do you want to play again? (yes/no): ").lower()
             if play_again == "yes":
-                value = generate()
-                num_guesses = 0  # Reset the number of guesses for a new game
+                continue  # Start a new game (loop iteration)
             else:
                 break
         elif your_guess < value:
@@ -560,7 +560,10 @@ def main():
         else:
             print("too high")
 
-main()
+if __name__ == "__main__":
+    main()
+
+# Done  0_0
 
 
 
