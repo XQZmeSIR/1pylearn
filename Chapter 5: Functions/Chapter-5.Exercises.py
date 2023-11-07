@@ -533,10 +533,34 @@
 
 
 ####### %%%%%%%%%%%   17. Prime number
+import random
 
+def generate():
+    return random.randint(1, 5)
 
+def main():
+    print("Guess the right number! :)")
+    your_guess = int(input("Please enter the number: "))
+    num_guesses = 0  # Initialize the number of guesses to zero
+    value = generate()
 
+    while True:
+        num_guesses += 1
+        if your_guess == value:
+            print("You guessed it. Good job mate!")
+            print(f"Guesses: {num_guesses}")
+            play_again = input("Do you want to play again? (yes/no): ").lower()
+            if play_again == "yes":
+                value = generate()
+                num_guesses = 0  # Reset the number of guesses for a new game
+            else:
+                break
+        elif your_guess < value:
+            print("too low")
+        else:
+            print("too high")
 
+main()
 
 
 
