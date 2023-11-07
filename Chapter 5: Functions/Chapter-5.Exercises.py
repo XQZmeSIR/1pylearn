@@ -437,39 +437,102 @@
 
 
 ####### %%%%%%%%%%%   16. Odd/Even Counter
-import random
+# import random
 
-NUMBER_LIST = [random.randint(0,1000)]
+# NUMBER_LIST = [random.randint(0,1000)]
 
-def main():
+# def main():
 
-    for numbers in range(100):
+#     for numbers in range(100):
 
-        number = print(NUMBER_LIST)
-        number
+#         number = print(NUMBER_LIST)
+#         number
 
-    is_even(number)
+#     is_even(number)
 
-    print('The total amount of even numbers is', even_count)
-    print('The total amount of odd numbers is', 100 - even_count)   
+#     print('The total amount of even numbers is', even_count)
+#     print('The total amount of odd numbers is', 100 - even_count)   
 
-def is_even(number):
+# def is_even(number):
 
-    even_count = 0
+#     even_count = 0
 
-    for number in NUMBERS_LIST:
-        if (number % 2):
-            even_count += 1
+#     for number in NUMBERS_LIST:
+#         if (number % 2):
+#             even_count += 1
 
-    return even_count
+#     return even_count
 
-main()
-
-
+# main()
 
 
 
+####### %%%%%%%%%%%   17. Prime number
 
+# def main():
+#     print("Welcome to the game!")
+#     your_number = int(input('Enter the number: '))
+#     boolean = is_prime(your_number)
+#     print(f"Number {your_number} is Prime number: {boolean}")
+
+# def is_prime(number):
+#     if number <= 1:
+#         return False
+#     for i in range(2, int(number**0.5) + 1):
+#         if number % i == 0:
+#             return False
+#     return True
+
+
+
+# # def is_prime(number):
+# #     result = number % 2
+# #     if result != 0:
+# #         return True
+# #     else:
+# #         return False
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+# def main():
+#     print('Welcome!')
+#     money = float(input("How much money do you have rn? "))
+#     month_percent = float(input("Month stavka: "))
+#     num_of_months = int(input('Months: '))
+#     fut_val = formula(money, month_percent, num_of_months)
+
+#     print(f"Account's future value: ${fut_val} ")
+
+
+# def formula(p, i, t):
+#     formula = p * (1 + i) ** t
+#     return formula
+
+
+# main()
+
+# def calculate_future_value(P, i, t):
+#     F = P * (1 + i) ** t
+#     return F
+
+# def main():
+#     P = float(input("Enter the present value of the account: "))
+#     i = float(input("Enter the monthly interest rate (as a decimal, e.g., 5% as 0.05): "))
+#     t = int(input("Enter the number of months: "))
+
+#     future_value = calculate_future_value(P, i, t)
+
+#     print(f"The future value of the account after {t} months is: ${future_value:,.2f}")
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+####### %%%%%%%%%%%   17. Prime number
 
 
 
