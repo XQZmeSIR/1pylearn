@@ -533,35 +533,35 @@
 
 
 ####### %%%%%%%%%%%   17. Prime number
-import random
-
-def generate():
-    return random.randint(1, 5)
-
-def main():
-    print("Guess the right number! :)")
-    num_guesses = 0  # Initialize the number of guesses to zero
-
-    while True:
-        value = generate()
-        your_guess = int(input("Please enter the number: "))
-        num_guesses += 1
-
-        if your_guess == value:
-            print("You guessed it. Good job mate!")
-            print(f"Guesses: {num_guesses}")
-            play_again = input("Do you want to play again? (yes/no): ").lower()
-            if play_again == "yes":
-                continue  # Start a new game (loop iteration)
-            else:
-                break
-        elif your_guess < value:
-            print("too low")
-        else:
-            print("too high")
-
-if __name__ == "__main__":
-    main()
+# import random
+#
+# def generate():
+#     return random.randint(1, 5)
+#
+# def main():
+#     print("Guess the right number! :)")
+#     num_guesses = 0  # Initialize the number of guesses to zero
+#
+#     while True:
+#         value = generate()
+#         your_guess = int(input("Please enter the number: "))
+#         num_guesses += 1
+#
+#         if your_guess == value:
+#             print("You guessed it. Good job mate!")
+#             print(f"Guesses: {num_guesses}")
+#             play_again = input("Do you want to play again? (yes/no): ").lower()
+#             if play_again == "yes":
+#                 continue  # Start a new game (loop iteration)
+#             else:
+#                 break
+#         elif your_guess < value:
+#             print("too low")
+#         else:
+#             print("too high")
+#
+# if __name__ == "__main__":
+#     main()
 
 # Done  0_0
 
@@ -570,14 +570,45 @@ if __name__ == "__main__":
 # I am back :)
 
 
+# def main():
+#     a = "gerrington!"
+#     b = "It is very nice to have you here again!"
+#     print(f"Hey {a}. {b}")
+#
+#     c = input('What do you think? Did you miss me? ')
+#     d = hello(a, b, c)
+#
+# def hello(a, b, c):
+#     return a + b + c
+#
+# main()
+
+
+
+####  20. Random Number Guessing Game
+
+import random
 def main():
-    a = "Ruslan!"
-    b = "It is very nice to have you here again!"
-    c = input('What do you think? Did you miss me? ')
-    end(a, b, c)
+    random_number = random.randint(1, 100)
+    while True:
+        user_input = int(input("Guess the number from 1 to 100. Input: "))
 
-def end
+        if user_input > random_number:
+            print("Too high, try again.")
+        elif user_input < random_number:
+            print("Too low, try again.")
+        else:
+            print('Congratulations! You guessed the number.')
+
+        cont = input('Do you want to play again?(yes or no) ')
+        if cont.lower() == "yes":
+            continue
+        else:
+            break
 
 
+
+if __name__ == '__main__':
+    main()
 
 
