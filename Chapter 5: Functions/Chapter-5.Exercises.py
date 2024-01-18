@@ -570,6 +570,13 @@ if __name__ == "__main__":
 # I am back :)
 
 
+def main():
+    a = "Ruslan!"
+    b = "It is very nice to have you here again!"
+    c = input('What do you think? Did you miss me? ')
+    end(a, b, c)
+
+def end
 
 
 
