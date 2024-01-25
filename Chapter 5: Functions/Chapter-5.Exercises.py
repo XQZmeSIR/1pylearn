@@ -587,29 +587,77 @@
 
 ####  20. Random Number Guessing Game
 
-import random
-def main():
-    random_number = random.randint(1, 100)
-    while True:
-        user_input = int(input("Guess the number from 1 to 100. Input: "))
-
-        if user_input > random_number:
-            print("Too high, try again.")
-        elif user_input < random_number:
-            print("Too low, try again.")
-        else:
-            print('Congratulations! You guessed the number.')
-
-        cont = input('Do you want to play again?(yes or no) ')
-        if cont.lower() == "yes":
-            continue
-        else:
-            break
-
-
-
-if __name__ == '__main__':
-    main()
+# import random
+# def main():
+#     random_number = random.randint(1, 100)
+#     while True:
+#         user_input = int(input("Guess the number from 1 to 100. Input: "))
+#
+#         if user_input > random_number:
+#             print("Too high, try again.")
+#         elif user_input < random_number:
+#             print("Too low, try again.")
+#         else:
+#             print('Congratulations! You guessed the number.')
+#
+#         cont = input('Do you want to play again?(yes or no) ')
+#         if cont.lower() == "yes":
+#             continue
+#         else:
+#             break
+#
+#
+#
+# if __name__ == '__main__':
+#     main()
 
 
 # done for today
+
+
+#####   21. Rock, Paper, Scissors Game
+import random
+
+print("Welcome to the Game!")
+
+def main():
+    comp_choice = random.randint(1, 3)
+    if comp_choice == 1:
+        comp_choice = "rock"
+    elif comp_choice == 2:
+        comp_choice = "paper"
+    else:
+        comp_choice = "scissors"
+    your_choice = input("Rock, Paper, Scissors? Input: ")
+    print(f'Computer chose: {comp_choice}')
+    try:
+        if  your_choice == "rock" and comp_choice == "scissors":
+            print('you won')
+        elif your_choice == "scissors" and comp_choice == "paper":
+            print("you won")
+        elif your_choice == "paper" and comp_choice == "rock":
+            print("you won")
+        elif your_choice == comp_choice:
+            print("play again to determine who's the winner")
+        else:
+            print("Computer won!")
+    
+    except ValueError:
+        print("Write the choice correctly!")
+
+
+main()
+
+
+# end def
+if user_choice == computer_choice:
+        return "It's a tie! Play again."
+elif (
+    (user_choice == 'rock' and computer_choice == 'scissors') or
+    (user_choice == 'scissors' and computer_choice == 'paper') or
+    (user_choice == 'paper' and computer_choice == 'rock')
+):
+    return "You win! Congratulations!"
+else:
+    return "Computer wins. Better luck next time."
+
