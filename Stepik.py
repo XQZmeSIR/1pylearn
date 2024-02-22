@@ -55,11 +55,24 @@
 
 # print(f"{x = :.3f}")
 
-marks=[1,5,4,5,6]
-print(marks[4])
-a=[]
-a.append(34)
-print(a)
-print(len(marks))
+# marks=[1,5,4,5,6]
+# print(marks[4])
+# a=[]
+# a.append(34)
+# print(a)
+# print(len(marks))
+
+a = int(input())  
+b = int(input())
+c = int(input())    
+
+if a > b > c or a < b < c:
+    print(b)
+
+elif b < c < a or b > c > a:
+    print(c)
+    
+else:
+    print(a)
 
 
