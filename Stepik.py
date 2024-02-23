@@ -62,12 +62,88 @@
 # print(a)
 # print(len(marks))
 
-mass = int(input())  
+# mass = int(input())  
 
-if mass <= 59:
-    print('Легкий вес')
-elif mass<= 63:
-    print('Первый полусредний вес')
-elif mass <=68
-    print('Полусредний вес')
+# if mass <= 59:
+#     print('Легкий вес')
+# elif mass<= 63:
+#     print('Первый полусредний вес')
+# elif mass <=68
+#     print('Полусредний вес')
 
+# a = float(input())
+# b = float(input())
+# s = (a * b) / 2
+# print(s)
+
+# 6.1
+# s = float(input())
+# v1 = float(input())
+# v2 = float(input())
+
+# v = v1 + v2
+# print(s/v)
+
+# a = float(input())
+# if a == 0:
+#     print("Обратного числа не существует")
+# else:
+#     print(1 / a)
+
+# grad = float(input())
+# c = (5/9)*(grad - 32)
+# print(c)
+
+# n = int(input())
+# if n <= 2:
+#     print(n * 10.5)
+# else:
+#     print(21 + (n - 2) * 4)
+
+# a = float(input())
+# b = a * 10
+# c = b % 10
+# print(c)
+
+# a = float(input())  # получаем число с плавающей запятой
+# # из числа 'a' вычитаем число 'a' переведеное в целое(оставляя только дробную часть),
+# # и выводит результат (дробную часть числа) на экран.
+# print(a - int(a))
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# e = int(input())
+
+# print('Наименьшее число =', min(a, b, c, d, e))
+# # Выводим на экран строку с сообщением о наибольшем числе, 
+# # найденном среди введенных значений, используя функцию max().
+# print('Наибольшее число =', max (a, b, c, d, e))
+
+# x = int(input())  # получаем целое число
+
+# a = x % 10
+# b = x // 10 % 10
+# c = x // 100
+
+# if a + b + c == 2 * max(a, b, c):
+#     print("Число интересное")  # Выводим сообщение, если условие выполняется
+# else:
+#     print("Число неинтересное")  # Выводим сообщение, если условие не выполняется
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 
