@@ -132,24 +132,29 @@
 # else:
 #     print("Число неинтересное")  # Выводим сообщение, если условие не выполняется
 
-a = float(input())
-b = float(input())
-c = float(input())
-d = float(input())
-e = float(input())
+# a = float(input())
+# b = float(input())
+# c = float(input())
+# d = float(input())
+# e = float(input())
 
-print(abs(a) + abs(b) + abs(c) + abs(d) + abs(e))
+# print(abs(a) + abs(b) + abs(c) + abs(d) + abs(e))
 
+# Получаем 4 целых числа и сохраняем в переменную'
+# p1 = int(input())
+# p2 = int(input())
+# q1 = int(input())
+# q2 = int(input())
+#
+# print(abs(p1 - q1) + abs(p2 - q2))
 
+# name = input("")
+# # surname = input("")
+# print(f'Футбольная команда {name} имеет длину {len(name)} символов')
 
-
-
-
-
-
-
-
-
+a = input()  # получаем первый город
+b = input()  # получаем второй город
+c = input()  # получаем третий город
 
 
 # 
