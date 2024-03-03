@@ -1,4 +1,5 @@
 # age = int(input("What's your age: "))
+import math
 
 # if age <= 13:
 #     print("You are a child")
@@ -152,9 +153,29 @@
 # # surname = input("")
 # print(f'Футбольная команда {name} имеет длину {len(name)} символов')
 
-a = input()  # получаем первый город
-b = input()  # получаем второй город
-c = input()  # получаем третий город
+# a = input()  # получаем первый город
+# b = input()  # получаем второй город
+# c = input()  # получаем третий город
 
+# a = input('')
+# if 'синий' in a:
+#     print('YES')
+# else:
+#     print('NO')
+#
+# mail = input(' ')
+# if '@' not in mail and '.' not in mail:
+#     print("NO")
+# else:
+#     print('YES')
 
-# 
+from math import *
+num1 = sqrt(2)     # вычисление корня квадратного из двух
+num2 = ceil(3.8)   # округление числа вверх
+num3 = floor(3.8)  # округление числа вниз
+
+print(num1)
+print(num2)
+print(num3)
+
+#
