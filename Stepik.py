@@ -1,5 +1,4 @@
 # age = int(input("What's your age: "))
-import math
 
 # if age <= 13:
 #     print("You are a child")
@@ -11,7 +10,6 @@ import math
 #     print("You are an elderly")
 
 
-
 # year = int(input())
 # # Проверяем, выполняются ли условия для високосного года:
 # # Год делится на 4 без остатка,
@@ -20,7 +18,6 @@ import math
 #     print('YES')
 # else:
 #     print('NO')
-
 
 
 # r1 = int(input())
@@ -169,13 +166,16 @@ import math
 # else:
 #     print('YES')
 
-from math import *
-num1 = sqrt(2)     # вычисление корня квадратного из двух
-num2 = ceil(3.8)   # округление числа вверх
-num3 = floor(3.8)  # округление числа вниз
+import math
 
-print(num1)
-print(num2)
-print(num3)
+x1 = float(input())
+y1 = float(input())
+x2 = float(input())
+y2 = float(input())
+
+result = math.pow(x1 - x2, 2) + math.pow(y1 - y2, 2)
+
+print(math.sqrt(result))
+
 
 #
