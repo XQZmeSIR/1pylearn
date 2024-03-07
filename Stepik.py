@@ -166,16 +166,37 @@
 # else:
 #     print('YES')
 
-import math
+# import math
 
-x1 = float(input())
-y1 = float(input())
-x2 = float(input())
-y2 = float(input())
+# x1 = float(input())
+# y1 = float(input())
+# x2 = float(input())
+# y2 = float(input())
 
-result = math.pow(x1 - x2, 2) + math.pow(y1 - y2, 2)
+# result = math.pow(x1 - x2, 2) + math.pow(y1 - y2, 2)
 
-print(math.sqrt(result))
+# print(math.sqrt(result))
+
+# import math
+
+# a=float(input())
+# b=float(input())
+
+# print((a+b) / 2)
+# print(math.sqrt(a*b))
+# print((2*(a*b)) / (a+b))
+# print(math.sqrt(math.pow(a, 2) + math.pow(b, 2) / 2))
+
+
+
+
+
+
+
+
+
+
+
 
 
 #
