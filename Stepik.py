@@ -187,7 +187,34 @@
 # print((2*(a*b)) / (a+b))
 # print(math.sqrt(math.pow(a, 2) + math.pow(b, 2) / 2))
 
+# import math
 
+# n = int(input())
+# a = float(input())
+
+# s = (n * a**2) / (4 * math.tan(math.pi / n))
+# print(s)
+
+# for i in range(6):
+#     print("AAA")
+# for a in range(5):
+#     print("BBBB")
+# print("E")
+# for c in range(9):
+#     print("TTTTT")
+# print("G")
+
+# num = int(input())
+# for i in range(num + 1):
+#     print(f"Квадрат числа {i} равен {i**2}")
+
+m = int(input())    # стартовое количество организмов
+p = int(input())    # среднесуточное увеличение в %;
+n = int(input())    # количество дней для размножения
+
+for i in range(n):
+    qw = m * (p / 100 + 1) ** i
+    print(i + 1, qw)
 
 
 
