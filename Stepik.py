@@ -208,22 +208,30 @@
 # for i in range(num + 1):
 #     print(f"Квадрат числа {i} равен {i**2}")
 
-m = int(input())    # стартовое количество организмов
-p = int(input())    # среднесуточное увеличение в %;
-n = int(input())    # количество дней для размножения
+# m = int(input())    # стартовое количество организмов
+# p = int(input())    # среднесуточное увеличение в %;
+# n = int(input())    # количество дней для размножения
 
-for i in range(n):
-    qw = m * (p / 100 + 1) ** i
-    print(i + 1, qw)
+# for i in range(n):
+#     qw = m * (p / 100 + 1) ** i
+#     print(i + 1, qw)
 
-
-
-
-
-
+# m, n = int(input()), int(input())
+# for i in range(n, m + 1):
+#     print(i)
 
 
+# m = int(input())
+# n = int(input())
+# for i in range(m, n + 1):
+#     if i % 17 == 0 or i % 10 == 9 or i % 15 == 0:
+#         print(i)
 
 
+n = int(input())
+
+for i in range(1, 11):
+    print(f'{n} x {i} = {n * i}')
+# Chupapaaaaapiiii i did it myself
 
 #
