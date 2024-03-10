@@ -228,10 +228,15 @@
 #         print(i)
 
 
-n = int(input())
+# n = int(input())
 
-for i in range(1, 11):
-    print(f'{n} x {i} = {n * i}')
+# for i in range(1, 11):
+#     print(f'{n} x {i} = {n * i}')
 # Chupapaaaaapiiii i did it myself
 
-#
+# x, y = y, x  Обмен переменными
+
+total = 0
+for i in range(1, 6):
+    total += i
+print(total)
