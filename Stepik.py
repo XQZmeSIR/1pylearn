@@ -239,22 +239,41 @@
 
 
 
-n = int(input())                # получаем кол-во циклов
-num1 = 0                        # число 1
-num2 = 1                        # число 2
-for i  in range(n):             # цикл до N
-    num2 = num1 + num2          # присваиваем переменной num2 новое значение суммы этой переменной с предыдущей
-    num1 = num2 - num1          # переменной num1 присваиваем значение которое было в num2
-    print(num1,end=' ')
+# n = int(input())                # получаем кол-во циклов
+# num1 = 0                        # число 1
+# num2 = 1                        # число 2
+# for i  in range(n):             # цикл до N
+#     num2 = num1 + num2          # присваиваем переменной num2 новое значение суммы этой переменной с предыдущей
+#     num1 = num2 - num1          # переменной num1 присваиваем значение которое было в num2
+#     print(num1,end=' ')
+
+# i = 0
+# while i < 101:
+#     print(i)
+#     i += 1
 
 
 
+# i = 7
+# a = 5
+# while i < 11:
+#     a += i
+#     i += 2
+# print(a)
 
 
+# i = str(input())
 
+# while i != "КОНЕЦ" or i != "конец":
+#     print(i)
+#     i = str(input())
 
-
-
+i = int(input())
+total = 0
+while i >= 0:
+    i = str(input())
+    total += 1
+print(total)
 
 
 
