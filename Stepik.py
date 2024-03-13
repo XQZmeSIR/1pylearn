@@ -268,14 +268,20 @@
 #     print(i)
 #     i = str(input())
 
+# i = int(input())
+# total = 0
+# while i >= 0:
+#     total += i
+#     i = int(input())
+# print(total)
+
 i = int(input())
-total = 0
-while i >= 0:
-    i = str(input())
-    total += 1
-print(total)
-
-
+count = 0
+while i > 0 and i < 6:
+    if i == 5:   
+        count += 1
+    i = int(input())
+print(count)
 
 
 
