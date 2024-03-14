@@ -71,8 +71,8 @@
 #         file.write(str(number) + '\n')
 
 # with open('teeeext.txt', 'r') as file:
-#     line = file.readline()
-#     while line != '':
+#     line = file.readline()  # первичное чтение нужно перед
+#     while line != '':       # while но не перед for
 #         print(line)
 #         line = file.readline()
 
