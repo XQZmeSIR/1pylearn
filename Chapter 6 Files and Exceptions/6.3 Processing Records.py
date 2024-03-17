@@ -67,32 +67,113 @@
 #     main()
 
 
-def main():
-    found = False  # we need a flag for if
+# def main():
+#     found = False  # we need a flag for if
 
-    search = input("What do you want to find? ")
+#     search = input("What do you want to find? ")
+
+#     with open('coffee.txt', 'r') as coffee_file:
+#         desc = coffee_file.readline()
+
+#         while desc != '':
+#             qty = float(coffee_file.readline())
+#             desc = desc.rstrip('\n')
+
+#             if desc == search:   # as usual but in a if condition
+#                 print(f'Description: {desc}')
+#                 print(f'Quantity: {qty}')
+#                 print()
+
+#                 found = True    # update flag to true
+
+#             desc = coffee_file.readline()
+
+#         if not found:       # use the flag in if not
+#             print('This value cannot be found in a file.')
+
+# if __name__ == "__main__":
+#     main()
+
+
+# Changing notes in file
+# import os
+
+# def main():
+#     found = False
+
+#     search = input('Enter the needed description: ')
+#     new_qty = int(input("Enter the new quantity: "))
+
+#     with open('coffee.txt', 'r') as coffee_file:
+        
+#         temp_file = open('temp.txt', 'w')
+        
+#         desc = coffee_file.readline()
+    
+#         while desc != '':
+#             qty = float(coffee_file.readline())
+#             desc = desc.rstrip()
+
+#             if desc == search:
+#                 temp_file.write(f'{desc}\n')
+#                 temp_file.write(f'{new_qty}\n')
+#                 found = True
+
+#             else:
+#                 temp_file.write(f'{desc}\n')
+#                 temp_file.write(f'{qty}\n')
+
+#             desc = coffee_file.readline()
+
+#     os.remove('coffee.txt')
+#     os.rename('temp.txt', 'coffee.txt')
+
+#     if found:
+#         print("File's updated")
+#     else:
+#         print("This value hasn't been found.")
+
+# if __name__ == "__main__":
+#     main()
+
+
+import os
+
+def main():
+    found = False
+
+    search = input('What coffee item do you want to delete? ')
 
     with open('coffee.txt', 'r') as coffee_file:
+        
+        temp_file = open('temp.txt', 'w')
+        
         desc = coffee_file.readline()
-
+    
         while desc != '':
             qty = float(coffee_file.readline())
-            desc = desc.rstrip('\n')
+            desc = desc.rstrip()
 
-            if desc == search:   # as usual but in a if condition
-                print(f'Description: {desc}')
-                print(f'Quantity: {qty}')
-                print()
-
-                found = True    # update flag to true
+            if desc != search:
+                temp_file.write(f'{desc}\n')
+                temp_file.write(f'{qty}\n')
+                
+            else:
+                found = True
 
             desc = coffee_file.readline()
 
-        if not found:       # use the flag in if not
-            print('This value cannot be found in a file.')
+    os.remove('coffee.txt')
+    os.rename('temp.txt', 'coffee.txt')
+
+    if found:
+        print("File's updated")
+    else:
+        print("This value hasn't been found.")
 
 if __name__ == "__main__":
     main()
+
 
 
 

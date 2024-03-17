@@ -1,6 +1,6 @@
-Robusta
-2000
-Arabica
-1000
 Prime
-300
+4000.0
+Pusher
+3444.5
+Robusta
+500.0
