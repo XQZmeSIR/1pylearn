@@ -305,9 +305,30 @@
 # print(count)  # Выводим минимально возможное количество чеканных монет для оплаты
 
 
+num = int(input())
 
+total = 0
+count = 0
+product = 1
 
+last_digit = num % 10
 
+while num != 0:
+    digit = num % 10
+    total += digit
+    count += 1
+    product *= digit
+
+    average = total / count
+
+    num = num // 10  # Update num for the next iteration
+
+print(total)
+print(count)
+print(product)
+print(average)
+print(digit)
+print(digit + last_digit)
 
 
 
