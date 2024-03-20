@@ -339,20 +339,62 @@
 
 # print(second_digit)
 
-n = int(input())
-last = n % 10
-flag = True
+# n = int(input())
+# last = n % 10
+# flag = True
 
-while n != 0:
-    l_digit = n % 10
-    if last != l_digit:
-        flag = False
-        break
-    n //= 10
-if flag:
-    print("YES")
-else:
-    print("NO")
+# while n != 0:
+#     l_digit = n % 10
+#     if last != l_digit:
+#         flag = False
+#         break
+#     n //= 10
+# if flag:
+#     print("YES")
+# else:
+#     print("NO")
+
+# for i in range(1, 101):
+#     if i == 7 or i == 17 or i == 29 or i == 78:
+#         continue  # переходим на следующую итерацию
+#     print(i)
+
+# for i in range(10):
+#     print(i, end='*')
+#     if i > 6:
+#         break
+
+# mult = 1
+# for i in range(1, 11):
+#    if i % 2 == 0:
+#       continue
+#    if i % 9 == 0:
+#       break
+#    mult *= i
+# print(mult)
+
+
+n = int(input())
+
+for number in range(1, n + 1):
+    if 5 <= number <= 9 or 17 <= number <= 37 or 78 <= number <= 87:
+        continue  # Пропускаем числа, которые попадают в запрещенные диапазоны
+    print(number)  # Выводим остальные числа
+
+# I should've used i variable in if or or or condition
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
