@@ -374,22 +374,31 @@
 # print(mult)
 
 
-n = int(input())
+# n = int(input())
 
-for number in range(1, n + 1):
-    if 5 <= number <= 9 or 17 <= number <= 37 or 78 <= number <= 87:
-        continue  # Пропускаем числа, которые попадают в запрещенные диапазоны
-    print(number)  # Выводим остальные числа
+# for number in range(1, n + 1):
+#     if 5 <= number <= 9 or 17 <= number <= 37 or 78 <= number <= 87:
+#         continue  # Пропускаем числа, которые попадают в запрещенные диапазоны
+#     print(number)  # Выводим остальные числа
 
-# I should've used i variable in if or or or condition
+# # I should've used i variable in if or or or condition
+
+# num = 1934234249
+# flag = True
+
+# for i in range(2, int(num ** 0.5) + 1):
+#     if num % i == 0:
+#         flag = False
+# if num > 1 and flag == True:
+#     print('Число простое')
+# else:
+#     print('Число составное')
 
 
-
-
-
-
-
-
+total = 0
+for i in range(1, 1001, 2):
+    total += i
+print(total)
 
 
 
