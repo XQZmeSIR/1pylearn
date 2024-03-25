@@ -4,10 +4,9 @@
 # используется инструкция try/except
 
 
-    
 # def main():
 #  # Initialize an accumulator.
-#     total = 0.0 
+#     total = 0.0
 #     try:
 #  # Open the sales_data.txt file.
 #         infile = open('sales_data.txt', 'r')
@@ -34,13 +33,12 @@
 #     main()
 
 
-
 def main():
     try:
         hours = int(input('Сколько часов вы отработали? '))
         pay_rate = float(input('Введите почасовую ставку: '))
         gross_pay = hours * pay_rate
-    
+
         print(f'Зарплата: ${gross_pay:,.2f}')
     except ValueError as err:
         print(err)
@@ -52,8 +50,8 @@ def main():
         It is executed regargless if there is or not any Exceptions.
         """)
 
-main()
 
+main()
 
 
 #
