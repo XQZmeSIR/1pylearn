@@ -34,6 +34,7 @@
 
 
 def main():
+    
     try:
         hours = int(input('Сколько часов вы отработали? '))
         pay_rate = float(input('Введите почасовую ставку: '))
@@ -49,8 +50,6 @@ def main():
         So the hierarchy is: `try` --> `except` --> `finally`.
         It is executed regargless if there is or not any Exceptions.
         """)
-
-
 main()
 
 
